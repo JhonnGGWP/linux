@@ -1,117 +1,163 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Las mejores distros Linux más livianas, a lo argento, con datos técnicos resumidos.">
-  <title>Distros Linux Livianas – A lo Argento</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linux, un amigo fiel</title>
   <style>
     body {
-      margin: 0;
-      padding: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
-      scroll-behavior: smooth;
+      margin:0; padding:0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background:#f2f2f7; color:#1c1c1e;
+      scroll-behavior:smooth;
     }
     header {
-      text-align: center;
-      padding: 2rem 1rem;
-      background: white;
-      box-shadow: 0 1px 5px rgba(0,0,0,0.05);
-      position: sticky;
-      top: 0;
-      z-index: 10;
+      position:sticky; top:0;
+      background:#fff; padding:2rem 1rem;
+      text-align:center;
+      box-shadow:0 1px 5px rgba(0,0,0,0.1);
+      z-index:10;
     }
-    header h1 {
-      font-size: 1.8rem;
-      margin: 0;
-    }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 1rem;
-    }
+    header h1 { font-size:1.8rem; margin:0; font-weight:600; }
+    header p { margin:0; color:#6e6e73; font-size:1rem;}
+    .container { max-width:800px; margin:0 auto; padding:1rem; }
     .card {
-      background: white;
-      border-radius: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-      margin: 1.5rem 0;
-      padding: 1rem;
-      transition: transform 0.2s;
+      background:#fff; border-radius:20px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.08);
+      margin:1.5rem 0; padding:1.2rem;
+      transition:transform .2s;
     }
-    .card:hover {
-      transform: translateY(-3px);
-    }
-    .card img {
-      width: 100%;
-      border-radius: 12px;
-    }
-    .card h2 {
-      font-size: 1.4rem;
-      margin: 0.5rem 0;
-    }
-    ul {
-      padding-left: 1.2rem;
-    }
-    ul li {
-      margin-bottom: 0.4rem;
+    .card:hover { transform:translateY(-4px); }
+    .logo { display:block; max-width:180px; margin:0 auto 1rem; }
+    h2 { text-align:center; font-size:1.4rem; margin-bottom:.6rem; }
+    p.desc { text-align:center; margin:.5rem 0 1rem; color:#444; font-size:1rem;}
+    ul { margin:0 0 1rem 1.2rem; padding:0; }
+    ul li { margin-bottom:.4rem; }
+    .links { text-align:center; margin-top:-.5rem; }
+    .links a {
+      margin:0 .5rem; color:#007aff; text-decoration:none;
+      font-size:1rem;
     }
     footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #777;
+      text-align:center; padding:2rem 1rem 3rem;
+      color:#6e6e73; font-size:0.9rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Distros Linux Más Livianas – A lo Argento</h1>
+    <h1>Linux, un amigo fiel</h1>
+    <p>Toda la data técnica, sin drama y al toque.</p>
   </header>
+  <main class="container">
+    <!-- Loc‑OS -->
+    <article class="card">
+      <img class="logo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Loc-OS_Linux_Logo.svg" alt="Loc‑OS logo" />
+      <h2>Loc‑OS</h2>
+      <p class="desc">La distro del pueblo hecha con cariño comunitario. Arranca liviana, reconoce el hardware al toque y viene lista para andar sin lío.</p>
+      <ul>
+        <li>Peso ISO: ~1.0 GB (LXDE, Debian‑based)</li>
+        <li>Requisitos mínimos: CPU ~1 GHz, 512 MB–1 GB RAM</li>
+        <li>Arquitecturas: 32 y 64 bits</li>
+        <li>RAM en idle: ~200 MB</li>
+        <li>Puntaje usuarios: ≈ 8.8 / 10 (4.4/5 estrellas en SourceForge)</li>
+      </ul>
+      <div class="links">
+        <a href="https://sourceforge.net/projects/loc-os/files/latest/download">Descarga oficial</a>
+        <a href="https://rufus.ie/en/Rufus-3.22.exe">Rufus 3.22</a>
+      </div>
+    </article>
 
-  <div class="container">
-    <!-- Ejemplo de tarjeta -->
-    <div class="card">
-      <img src="imagenes/htop_lubuntu.png" alt="HTOP Lubuntu">
+    <!-- Lubuntu -->
+    <article class="card">
+      <img class="logo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Lubuntu_logo.svg" alt="Lubuntu logo" />
       <h2>Lubuntu</h2>
+      <p class="desc">Una distro veterana livianita, ideal para notebooks viejos que buscan andar sin drama. Arranca rápido y no te rompe la cabeza.</p>
       <ul>
-        <li>Peso: ~1.3 GB</li>
-        <li>Requisitos: CPU 1 GHz, 1 GB RAM</li>
-        <li>Arquitectura: 32 y 64 bits</li>
-        <li>RAM en idle: 200 MB</li>
-        <li>Puntaje usuarios: 8.5/10</li>
+        <li>Peso ISO: ~1.3 GB</li>
+        <li>Requisitos mínimos: CPU 1 GHz, 1 GB RAM</li>
+        <li>Arquitecturas: 32 y 64 bits</li>
+        <li>RAM en idle: ~200 MB</li>
+        <li>Puntaje usuarios: 8.5 / 10</li>
       </ul>
-    </div>
+      <div class="links">
+        <a href="https://lubuntu.me/downloads/">Descarga oficial</a>
+        <a href="https://rufus.ie/en/Rufus-3.22.exe">Rufus 3.22</a>
+      </div>
+    </article>
 
-    <div class="card">
-      <img src="imagenes/htop_linuxlite.png" alt="HTOP Linux Lite">
-      <h2>Linux Lite</h2>
+    <!-- Linux Lite -->
+    <article class="card">
+      <img class="logo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Linux_lite_light_logo_sample_sample.png" alt="Linux Lite logo" />
+      <h2>Linux Lite</h2>
+      <p class="desc">Se siente moderno pero no te exige nada. Ideal si querés algo sencillo y funcional sin romperte el bocho con configuraciones.</p>
       <ul>
-        <li>Peso: ~1.4 GB</li>
-        <li>Requisitos: CPU 1.5 GHz, 1 GB RAM</li>
-        <li>Arquitectura: 64 bits</li>
-        <li>RAM en idle: 280 MB</li>
-        <li>Puntaje usuarios: 8/10</li>
+        <li>Peso ISO: ~1.4 GB</li>
+        <li>Requisitos mínimos: CPU 1.5 GHz, 1 GB RAM</li>
+        <li>Arquitectura: 64 bits</li>
+        <li>RAM en idle: ~280 MB</li>
+        <li>Puntaje usuarios: 8.0 / 10</li>
       </ul>
-    </div>
+      <div class="links">
+        <a href="https://www.linuxliteos.com/download.php">Descarga oficial</a>
+        <a href="https://rufus.ie/en/Rufus-3.22.exe">Rufus 3.22</a>
+      </div>
+    </article>
 
-    <div class="card">
-      <img src="imagenes/htop_puppy.png" alt="HTOP Puppy Linux">
-      <h2>Puppy Linux</h2>
+    <!-- Puppy -->
+    <article class="card">
+      <img class="logo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Puppy_logo.svg" alt="Puppy Linux logo" />
+      <h2>Puppy Linux</h2>
+      <p class="desc">Una distrosita formidable para revivir compus que ya daban por perdidas. Ultraliviana y con arranque rapidísimo.</p>
       <ul>
-        <li>Peso: ~400 MB</li>
-        <li>Requisitos: CPU 700 MHz, 256 MB RAM</li>
-        <li>Arquitectura: 32 y 64 bits</li>
-        <li>RAM en idle: 100 MB</li>
-        <li>Puntaje usuarios: 9/10</li>
+        <li>Peso ISO: ~400 MB</li>
+        <li>Requisitos mínimos: CPU 700 MHz, 256 MB RAM</li>
+        <li>Arquitecturas: 32 y 64 bits</li>
+        <li>RAM en idle: ~100 MB</li>
+        <li>Puntaje usuarios: 9.0 / 10</li>
       </ul>
-    </div>
-  </div>
+      <div class="links">
+        <a href="https://puppylinux.com/downloads/">Descarga oficial</a>
+        <a href="https://rufus.ie/en/Rufus-3.22.exe">Rufus 3.22</a>
+      </div>
+    </article>
 
-  <footer>
-    Hecho con ❤️ y mate en Argentina.
-  </footer>
+    <!-- Q4OS -->
+    <article class="card">
+      <img class="logo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Q4OS_logo.svg" alt="Q4OS logo" />
+      <h2>Q4OS</h2>
+      <p class="desc">Un clásico de los sistemas minimalistas, con escritorio TDE que imita Windows pero sin exigir recursos excesivos.</p>
+      <ul>
+        <li>Peso ISO: ~1.0–1.2 GB</li>
+        <li>Requisitos mínimos: CPU 1 GHz, 512 MB–1 GB RAM</li>
+        <li>Arquitecturas: 32 y 64 bits, ARM</li>
+        <li>RAM en idle: ~180–220 MB (TDE)</li>
+        <li>Puntaje usuarios: 8.2 / 10</li>
+      </ul>
+      <div class="links">
+        <a href="https://q4os.org/downloads.html">Descarga oficial</a>
+        <a href="https://rufus.ie/en/Rufus-3.22.exe">Rufus 3.22</a>
+      </div>
+    </article>
+
+    <!-- Xubuntu -->
+    <article class="card">
+      <img class="logo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Xubuntu_logo.svg" alt="Xubuntu logo" />
+      <h2>Xubuntu</h2>
+      <p class="desc">Una versión oficial de Ubuntu con XFCE, liviana pero con todo el soporte de Ubuntu detrás. Clarita y funcional.</p>
+      <ul>
+        <li>Peso ISO: ~2.0 GB</li>
+        <li>Requisitos mínimos: CPU 1.5 GHz, 1–2 GB RAM</li>
+        <li>Arquitectura: 64 bits</li>
+        <li>RAM en idle: ~300–400 MB</li>
+        <li>Puntaje usuarios: 8.3 / 10</li>
+      </ul>
+      <div class="links">
+        <a href="https://xubuntu.org/download/">Descarga oficial</a>
+        <a href="https://rufus.ie/en/Rufus-3.22.exe">Rufus 3.22</a>
+      </div>
+    </article>
+  </main>
+  <footer>JhonnGGWP - 2025 - Argentina</footer>
 </body>
 </html>
